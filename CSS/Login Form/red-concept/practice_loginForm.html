@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+          *{
+               box-sizing: border-box;
+               font-family: 'Poppins', sans-serif;
+               
+          }
+
+          html,body{
+               display:flex;
+               height:100%;
+               width:100%;
+               justify-content: center;
+               align-items: center;
+               background: linear-gradient(to right, #99004D 0%,#ff0080 100%);
+          }
+          .container{
+               background:#fff;
+               width:100%;
+               max-width:350px;
+               padding:25px 30px;
+               border-radius:5px;
+               box-shadow: 0 10px 10px rgba(0,0,0,0.15);
+          }
+          .container .title{
+               font-size:30px;
+               font-weight:600;
+               margin:20px 0 10px 0;
+               position:relative;
+          }
+          .container .title::after{
+               position:absolute;
+               content:'';
+               height:4px;
+               width:30px;
+               left:0;
+               bottom:3px;
+               border-radius:5px;
+               background: linear-gradient(to right, #99004D 0%,#ff0080 100%);
+          }
+          .container .submit-button{
+               margin:40px 0 20px 0;
+          }
+          .container .input-box{
+               width:100%;
+               height:45px;
+               margin-top:25px;
+               position:relative;
+          }
+          .container .input-box input{
+               width:100%;
+               height:100%;
+               border:none;
+               outline:none;
+               font-size:16px;
+          }
+          .container .input-box .underline::before{
+               position:absolute;
+               content:'';
+               width:100%;
+               height:2px;
+               background:#ccc;
+               left:0;
+               bottom:0;
+          }
+          .container .input-box .underline::after{
+               position:absolute;
+               content:'';
+               width:100%;
+               height:2px;
+               background: linear-gradient(to right, #99004D 0%,#ff0080 100%);
+               left:0;
+               bottom:0;
+               transform:scaleX(0);
+               transform-origin:left;
+               transition:all 0.3s ease;
+          }
+
+          .container .input-box input:focus ~ .underline::after,
+          .container .input-box input:valid ~ .underline::after{
+               transform:scaleX(1);
+          }
+        
+          .container .input-box input[type ="submit"]{
+               font-size:17px;
+               color:#fff;
+               background:linear-gradient(to right, #99004D 0%,#ff0080 100%);
+               border-radius:5px;
+               cursor:pointer;
+               transition:all 0.3s ease;
+          }
+          .container .input-box input[type ="submit"]:hover{
+               letter-spacing:2px;
+               background:linear-gradient(to left, #99004D 0%,#ff0080 100%);
+          }
+          .container .option{
+               text-align:center;
+               font-size:14px;
+          }
+          .container .twitter a,
+          .container .facebook a{
+               text-decoration: none;
+               color:#fff;background:linear-gradient(to right, #99004D 0%,#ff0080 100%);
+               width:100%;
+               height:45px;
+               display:flex;
+               justify-content: center;
+               align-items:center;
+               border-radius: 5px;
+               font-size:15px;
+               margin: 20px 0 15px 0;
+               transition:all 0.3s ease;
+          }
+          .container .twitter a{
+               background:linear-gradient(to right, #00ACEE, #1abeff );
+          }
+          .container .facebook a{
+               background:linear-gradient(to right, #3b5998, #476bb8 );
+          }
+          .container .twitter a:hover{
+               letter-spacing:2px;
+               background:linear-gradient(to left, #00ACEE, #1abeff );
+          }
+          .container .facebook a:hover{
+               letter-spacing:2px;
+               background:linear-gradient(to left, #3b5998, #476bb8 );
+          }
+
+          .container .twitter i,
+          .container .facebook i{
+               padding-right:12px;
+               font-size:20px;
+          }
+     </style>
+</head>
+<body>
+
+     <article class="container">
+          <form action="#">
+               <div class="title">LogIn</div>
+
+               <div class="input-box">
+                    <input type="text" placeholder="Enter Your Email" required/>
+                    <div class="underline"></div>
+               </div>
+
+               <div class="input-box">
+                    <input type="text" placeholder="Enter Your Password" required/>
+                    <div class="underline"></div>
+               </div>
+
+               <div class="input-box submit-button">
+                    <input type="submit" value="continue"/>
+               </div>
+
+               <div class="option">or Connect with Social Media</div>
+               <div class="twitter">
+                    <a href="#"><i class="fab fa-twitter"></i>Login with Twitter</a>
+               </div>
+               <div class="facebook">
+                    <a href="#"><i class="fab fa-facebook-f"></i>Login with Facebook</a>
+               </div>
+          </form>
+     </article>
+
+     <script src="https://kit.fontawesome.com/07b4e69b1e.js" crossorigin="anonymous"></script>
+</body>
+</html>
