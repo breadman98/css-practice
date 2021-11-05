@@ -38,4 +38,4 @@ https://www.codingfactory.net/10630
 `참고` : 유튜브 codingLab<br>
 타이틀 밑줄은 ::after에다가 새로 그림을 그려준다. content를 공백으로 주고 width,height,bg로 그림그려줌, 이 때 포지션을 잘 고려하자.<br>
 input 밑줄은 hover,valid 때 효과를 줄 것이니 underline속성을 사용해서 넣어주는게 아니라 아예 html에서 .underline클래스로
-공간을 잡아주고 css에서 다뤄주니 편하다
+공간을 잡아주고 css에서 다뤄주니 편하다 + 편해서 이렇게한다고 생각했는데 계속해보니까 이렇게 해주면 트랜지션줄수가있음 border-bottom그려주면 트랜지션 자유롭게 주기에는 제약
