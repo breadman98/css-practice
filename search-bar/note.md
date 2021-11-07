@@ -4,3 +4,6 @@ js할때 classList.add("toggle")이랑 슷한 동작
 
 
 wrap은 바로위에 하나만.
+
+
+form을 포지션 relative로 주고 margin:auto;로 줘서 이벤트발생시 동적으로 width가 변하면서 포지션을 자연스럽게 잡도록 한다
