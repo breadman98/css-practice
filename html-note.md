@@ -16,3 +16,5 @@
 
   + input태그는 열린태그라 자식요소를 가질 수 없다.
   + button태그는 닫힌태그라 자식요소를 가질 수 있다. -> input type="button"으로는 못하는 일들을 해줄 수 있음
+
+참고:https://nykim.work/96
